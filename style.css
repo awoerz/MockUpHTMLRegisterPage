@@ -24,28 +24,36 @@ header ul {
 }
 
 header ul .button {
-  box-shadow: 1px 1px 5px gray;
   min-width: 6em;
   margin: 0 20px;
+  list-style: none;
 }
 
 .button {
   font-size: 22px;
-  list-style: none;
   background-color: #0080ff;
   color: white;
   padding: 0.3em 1em;
   border-radius: 5px;
   text-align: center;
+  border: none;
+  transition: all ease 0.2s;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 2px 2px 10px gray;
 }
 
 .form-container {
   background-color: white;
-  border: 1px solid black;
-  width: 30%;
+  border: 1px solid gray;
+  width: 23%;
   margin: 5em auto;
-  padding: 4em;
-  border-radius: 5px;
+  padding: 35px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 7px gray;
 }
 
 .form-container form {
@@ -54,22 +62,28 @@ header ul .button {
 }
 
 .form-container form input {
-  font-size: 35px;
+  font-size: 16px;
   margin: 20px 0;
   padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
 }
 
-.form-container form button {
+.form-container form .button {
+  margin: 20px 0;
 }
 
 .icon-container {
-  margin: 40px 0;
+  margin: 40px 0 0;
   display: flex;
   justify-content: space-around;
 }
 
 .icon-container img {
   max-width: 50px;
-  border: 0.5px solid gray;
   border-radius: 50%;
+}
+
+.icon-container img:hover {
+  box-shadow: 1px 1px 20px #0080ff;
 }
